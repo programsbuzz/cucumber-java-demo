@@ -47,6 +47,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -83,7 +91,7 @@
 							<div class="navbar-text nav-title flex" id="pageTitle">Dashboard</div>
 							<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Apr 6, 2021 01:24:12 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Sep 27, 2021 11:21:35 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 							</ul>
 						</div>
@@ -100,8 +108,8 @@
 						2
 					</div>
 					<div class="d-flex">
-						<span class="flex text-muted">Out of which 2 passed</span>
-						<span><i class="fa fa-circle-o text-success"></i> 100.00%</span>
+						<span class="flex text-muted">Out of which 1 passed</span>
+						<span><i class="fa fa-circle-o text-success"></i> 50.00%</span>
 					</div>
 				</div>
 			</div>
@@ -111,11 +119,11 @@
 						<span class="">Scenarios</span>
 					</div>
 					<div class="py-3 text-center text-md text-primary">
-						2
+						4
 					</div>
 					<div class="d-flex">
-						<span class="flex text-muted">Out of which 2 passed</span>
-						<span><i class="fa fa-circle-o text-primary"></i> 100.00%</span>
+						<span class="flex text-muted">Out of which 3 passed</span>
+						<span><i class="fa fa-circle-o text-primary"></i> 75.00%</span>
 					</div>
 				</div>
 			</div>
@@ -125,7 +133,7 @@
 						<span class="">Start</span>
 					</div>
 					<div class="py-3 text-center text-md">
-						Apr 6, 2021 01:24:12 PM
+						Sep 27, 2021 11:21:35 PM
 					</div>
 					<div class="d-flex">
 						<span class="flex"></span>
@@ -139,7 +147,7 @@
 						<span class="">Time Taken</span>
 					</div>
 					<div class="py-3 text-center text-md">
-						0h 0m 35s+54ms
+						0h 1m 1s+144ms
 					</div>
 					<div class="d-flex">
 						<span class="flex"></span>
@@ -163,14 +171,17 @@
 							<div class="col-lg-5">
 								<div class="list">
 									<div class="list-item">
-										<div><i class="badge badge-xs badge-o b-info"></i> &nbsp;Pass 100.00%</div>
+										<div><i class="badge badge-xs badge-o b-info"></i> &nbsp;Pass 50.00%</div>
+									</div>
+									<div class="list-item">
+										<div><i class="badge badge-xs badge-o b-danger"></i> &nbsp;Fail 50.00%</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">2 passed, 0 failed and 0 skipped</small>
+						<small class="text-muted">1 passed, 1 failed and 0 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -188,14 +199,17 @@
 							<div class="col-lg-5">
 								<div class="list">
 									<div class="list-item">
-										<div><i class="badge badge-xs badge-o b-info"></i> &nbsp;Pass 100.00%</div>
+										<div><i class="badge badge-xs badge-o b-info"></i> &nbsp;Pass 75.00%</div>
+									</div>
+									<div class="list-item">
+										<div><i class="badge badge-xs badge-o b-danger"></i> &nbsp;Fail 25.00%</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">2 passed, 0 failed and 0 skipped</small>
+						<small class="text-muted">3 passed, 1 failed and 0 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -213,15 +227,19 @@
 							<div class="col-lg-5">
 								<div class="list">
 									<div class="list-item">
-										<div><i class="badge badge-xs badge-o b-info"></i> 100%</div>
+										<div><i class="badge badge-xs badge-o b-info"></i> 75%</div>
 										<div class="list-body"><span class="text-muted">Passed</span></div>
+									</div>
+									<div class="list-item">
+										<div><i class="badge badge-xs badge-o b-danger"></i> 25%</div>
+										<div class="list-body"><span class="text-muted">Failed</span></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="box-footer">
-						<small class="text-muted">9 passed, 0 failed and 0 skipped</small>
+						<small class="text-muted">21 passed, 1 failed and 0 skipped</small>
 					</div>
 				</div>
 			</div>
@@ -252,27 +270,21 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@Contact</td>
+							<td>@regression</td>
+							<td>3</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@sanity</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 						</tr>
 						<tr>
-							<td>@SmokeTest</td>
-							<td>2</td>
+							<td>@Search</td>
 							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@Login</td>
 							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td>@registration</td>
-							<td>1</td>
-							<td>0</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -298,7 +310,7 @@
 		                datasets: [{
 		                    borderColor: 'transparent',
 		                    data: [
-		                    	2, 0, 0, 0, 0, 0
+		                    	1, 1, 0, 0, 0, 0
 		                    ],
 		                    backgroundColor: [
 		                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -332,7 +344,7 @@
 			                datasets: [{
 			                    borderColor: 'transparent',
 			                    data: [
-			                    	2, 0, 0, 0, 0, 0
+			                    	3, 1, 0, 0, 0, 0
 			                    ],
 			                    backgroundColor: [
 			                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -367,7 +379,7 @@
 			                datasets: [{
 			                    borderColor: 'transparent',
 			                    data: [
-			                    	9, 0, 0, 0, 0, 0
+			                    	21, 1, 0, 0, 0, 0
 			                    ],
 			                    backgroundColor: [
 			                        "#00af00", "#F7464A", "#8b0000", "#ff6347", "#FDB45C", "#1e90ff"
@@ -395,7 +407,7 @@
 		})();
 	})
     var timeline = {
-"Contact Us Functiality":17.302,"Registration, Login and MyAccount":17.043    };
+"Registration, Login and MyAccount":44.692,"Search Feature":14.395    };
     function getRandomColor() {
         var letters = '0123456789ABCDEF';
         var color = '#';

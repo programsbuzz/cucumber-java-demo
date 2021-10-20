@@ -54,13 +54,13 @@
 
 	<dependencies>
 
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-junit4</artifactId>
+    <version>2.15.0</version>
+</dependency>
 
-		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber-jvm -->
-		<dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-cucumber5-jvm</artifactId>
-			<version>2.13.5</version>
-		</dependency>
 
 
 		<!-- <dependency> <groupId>io.qameta.allure</groupId> <artifactId>allure-junit4</artifactId> 

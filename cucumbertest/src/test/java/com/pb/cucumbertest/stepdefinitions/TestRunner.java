@@ -14,12 +14,13 @@ import io.cucumber.junit.Cucumber;
 //		plugin = {"pretty", "html:target/cucumber-html-report" , "json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml" , "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 
 //		Enable below plugin for Allure 5 Adapter
-		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+//		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+		plugin = { "pretty", "io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
 		features = {"src/test/resources/features" }, 
 		glue = {"com.pb.cucumbertest.stepdefinitions"}, 
 		monochrome = true, 
 		dryRun = false, 
-		tags = ("@SmokeTest")
+		tags = ("@regression")
 		)
 
 public class TestRunner {

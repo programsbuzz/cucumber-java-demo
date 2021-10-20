@@ -51,6 +51,14 @@
 							</a>
 						</li>
 						<li>
+							<a href="exception.html">
+							<span class="nav-icon">
+							<i class="fa fa-warning"></i>
+							</span>
+							<span class="nav-text">Exceptions</span>
+							</a>
+						</li>
+						<li>
 							<a href="dashboard.html">
 							<span class="nav-icon">
 							<i class="fa fa-dashboard"></i>
@@ -95,7 +103,7 @@
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
 										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
-										
+										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
 										
@@ -112,10 +120,9 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Contact</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@SmokeTest</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@Login</span></a>
-						    	        <a class="dropdown-item" href="#"><span class="cf">@registration</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@regression</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@sanity</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@Search</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -134,124 +141,21 @@
 										<h6 class="mb-3 ml-1">Test Logs</h6>
 											<div class="tsc" status="pass">
 											<div class="st pass test l0" 
-												tags="@Contact"
-												devices="">
-												<span class="tt">04.06.2021 13:24:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Contact Us Functiality] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Contact</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l1" 
-												tags="@Contact @SmokeTest"
-												devices="">
-												<span class="tt">04.06.2021 13:24:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Contact Us Test 1] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Contact</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
-												
-											</div>
-											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:12</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st info">
-													<span class="tt">04.06.2021 13:24:12</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">Before Hook</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">04.06.2021 13:24:14</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
-												
-												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:28</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">04.06.2021 13:24:28</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Contact us" link] started</span>
-												
-												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:29</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Contact us" link]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">04.06.2021 13:24:29</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on submit button] started</span>
-												
-												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:29</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I click on submit button]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
-											</div>
-											<div class="tsc" status="pass">
-											<div class="st pass test l0" 
-												tags="@Login @registration"
-												devices="">
-												<span class="tt">04.06.2021 13:24:30</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">[Registration, Login and MyAccount] started</span>
-												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Login</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @registration</span>
-												</span>
-												<span class="author-list">
-												</span>
-												<span class="device-list">
-												</span>
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@Login @registration @SmokeTest"
+												tags="@regression"
 												devices="">
-												<span class="tt">04.06.2021 13:24:30</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Verify Forgot Password Functionality] started</span>
+												<span class="tn">|---[Create New User] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @Login</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @registration</span>
-													<span class="category badge"><i class="fa fa-tag"></i> @SmokeTest</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -262,12 +166,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:30</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:35</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">04.06.2021 13:24:30</span>&nbsp;
+													<span class="tt">09.27.2021 23:21:35</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
 													
@@ -277,12 +181,12 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:31</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:38</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
 												
 												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:42</span>&nbsp;
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
 													
@@ -292,14 +196,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:42</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in" link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:45</span>&nbsp;
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in" link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -307,14 +211,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:45</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I follow "Forgot your password?" link] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:47</span>&nbsp;
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I follow "Forgot your password?" link]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -322,16 +226,338 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">04.06.2021 13:24:47</span>&nbsp;
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I fill in email with "goswami.tarun777@gmail.com"] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I click "create an account button"] started</span>
 												
 												<div class="st pass">
-													<span class="tt">04.06.2021 13:24:47</span>&nbsp;
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I fill in email with "goswami.tarun777@gmail.com"]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I click "create an account button"]</span>
 													
 													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">After Hook</span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@sanity @regression"
+												devices="">
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify Logout Functionality] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @sanity</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:21:49</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:21:49</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">Before Hook</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:21:50</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "email address textbox" with "goswami.tarun77@gmail.com"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "email address textbox" with "goswami.tarun77@gmail.com"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I fill "password textbox" with "Test1234"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I fill "password textbox" with "Test1234"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:22:03</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">After Hook</span>
+												</div>
+											</div>
+											<div class="st pass test l1" 
+												tags="@regression"
+												devices="">
+												<span class="tt">09.27.2021 23:22:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">|---[Verify Ignore Test Case] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:04</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:22:04</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">Before Hook</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:05</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "email address textbox" with "goswami.tarun77@gmail.com"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill "email address textbox" with "goswami.tarun77@gmail.com"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">After Hook</span>
+												</div>
+											</div>
+											</div>
+											<div class="tsc" status="fail">
+											<div class="st fail test l0" 
+												tags="@Search"
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">[Search Feature] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Search</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st fail test l1" 
+												tags="@Search @regression"
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">|---[I want to search the website] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @Search</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @regression</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
+												
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:22:20</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">Before Hook</span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:22</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill in search query one text with "T-Shirt"] started</span>
+												
+												<div class="st pass">
+													<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+													<span class="ts">pass</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I fill in search query one text with "T-Shirt"]</span>
+													
+													<span class="td"></span>
+												</div>
+											</div>
+											<div class="st fail test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And this step will fail] started</span>
+												
+												<div class="st fail">
+													<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And this step will fail]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.ArithmeticException: / by zero
+	at com.pb.cucumbertest.stepdefinitions.CommonSD.this_step_will_fail(CommonSD.java:22)
+	at ✽.this step will fail(file:///Users/tarungoswami/git/cucumbertest/cucumbertest/src/test/resources/features/Search.feature:9)
+</textarea></span>
+												</div>
+											</div>
+											<div class="st pass test l2" 
+												tags=""
+												devices="">
+												<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)] started</span>
+												
+												<div class="st info">
+													<span class="tt">09.27.2021 23:22:35</span>&nbsp;
+													<span class="ts">info</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.af0(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">After Hook</span>
 												</div>
 											</div>
 											</div>

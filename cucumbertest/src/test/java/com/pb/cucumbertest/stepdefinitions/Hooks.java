@@ -60,7 +60,7 @@ public class Hooks extends Base {
 	@After
 	public void af0(Scenario scenario) throws InterruptedException, IOException, IllegalMonitorStateException {
 		
-//		scenario.log("After Hook");
+		scenario.log("After Hook");
 		
 //		Enable below line to print screenshot for Extent Adpter
 //		ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(GenericFunctions.getBase64Screenshot());

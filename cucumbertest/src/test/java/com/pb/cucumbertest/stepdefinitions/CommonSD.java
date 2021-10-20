@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import com.pb.cucumbertest.helper.Base;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
@@ -15,12 +16,18 @@ public class CommonSD extends Base {
 	public void i_follow_link(String linkTxt) {
 		driver.findElement(By.linkText(linkTxt)).click();
 	}
+	
+	@When("this step will fail")
+	public void this_step_will_fail() {
+	    System.out.println(10/0);
+	}
+	
 
 	@Then("I click on {string}")
 	public void i_click_sign_in_button(String locator) {
-		WebElement myButton = driver.findElement(By.cssSelector(locator));
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", myButton);
+//		WebElement myButton = driver.findElement(By.cssSelector(locator));
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].click();", myButton);
 	}
 
 	@Then("I should see heading {string}")
@@ -43,5 +50,20 @@ public class CommonSD extends Base {
 	public void i_click_on_submit_button() {
 //	   driver.findElement(By.xpath("randomxpathwillnotwork")).click();
 	}
+	
+	@Given("I follow {string}")
+	public void i_follow(String string) {
+	   
+	}
+	@When("I fill {string} with {string}")
+	public void i_fill_with(String string, String string2) {
+
+	}
+	
+	@Then("I click {string}")
+	public void i_click(String string) {
+	  
+	}
+
 
 }
