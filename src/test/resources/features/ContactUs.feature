@@ -1,4 +1,4 @@
-@Contact
+@ContactT
 Feature: Contact Us Functiality
 
 Background: 
