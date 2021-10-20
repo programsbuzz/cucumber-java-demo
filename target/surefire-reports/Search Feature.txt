@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: Search Feature
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 16.7 s <<< FAILURE! - in Search Feature
+Search Feature.I want to search the website  Time elapsed: 16.7 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'I fill in search query one text with "T-Shirt"' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("I fill in search query one text with {string}")
+public void i_fill_in_search_query_one_text_with(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Search Feature.I want to search the website  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+

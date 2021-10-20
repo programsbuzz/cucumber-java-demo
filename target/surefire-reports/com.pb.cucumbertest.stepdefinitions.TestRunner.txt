@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.pb.cucumbertest.stepdefinitions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.575 s <<< FAILURE! - in com.pb.cucumbertest.stepdefinitions.TestRunner
+com.pb.cucumbertest.stepdefinitions.TestRunner  Time elapsed: 0.566 s  <<< ERROR!
+java.lang.AbstractMethodError: Receiver class io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm$$Lambda$141/0x0000000800131040 does not define or inherit an implementation of the resolved method abstract receive(Ljava/lang/Object;)V of interface io.cucumber.plugin.event.EventHandler.
+
