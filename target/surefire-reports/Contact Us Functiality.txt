@@ -1,10 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Contact Us Functiality
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.78 s <<< FAILURE! - in Contact Us Functiality
-Contact Us Functiality.Contact Us Test 1  Time elapsed: 2.779 s  <<< ERROR!
-java.lang.NullPointerException
-
-Contact Us Functiality.Contact Us Test 1  Time elapsed: 0 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.09 s <<< FAILURE! - in Contact Us Functiality
+Contact Us Functiality.Contact US 2  Time elapsed: 5.09 s  <<< ERROR!
 java.lang.NullPointerException
 

@@ -1,6 +1,6 @@
 package com.pb.cucumbertest.stepdefinitions;
 
-import com.pb.cucumbertest.helper.Base;
+import com.pb.cucumbertest.common.Base;
 
 import io.cucumber.java.en.When;
 

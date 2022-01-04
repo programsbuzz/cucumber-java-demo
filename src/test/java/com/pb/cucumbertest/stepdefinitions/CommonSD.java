@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-import com.pb.cucumbertest.helper.Base;
+import com.pb.cucumbertest.common.Base;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -14,12 +14,12 @@ import io.cucumber.java.en.When;
 public class CommonSD extends Base {
 	@When("I follow {string} link")
 	public void i_follow_link(String linkTxt) {
-		driver.findElement(By.linkText(linkTxt)).click();
+//		driver.findElement(By.linkText(linkTxt)).click();
 	}
 	
 	@When("this step will fail")
 	public void this_step_will_fail() {
-	    System.out.println(10/0);
+//	    System.out.println(10/0);
 	}
 	
 
@@ -64,6 +64,13 @@ public class CommonSD extends Base {
 	public void i_click(String string) {
 	  
 	}
+
+	@When("I fill in {string} with {string}")
+	public void i_fill_in_with(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+//	    throw new io.cucumber.java.PendingException();
+	}
+
 
 
 }

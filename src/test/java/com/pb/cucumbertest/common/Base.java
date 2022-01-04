@@ -1,4 +1,4 @@
-package com.pb.cucumbertest.helper;
+package com.pb.cucumbertest.common;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
@@ -6,8 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
-	public static WebDriver driver;
-	String browser = "chrome";
+	public WebDriver driver;
+	public String browser = "chrome";
 	public static String screenshotdir = System.getProperty("user.dir") + "/test-output/screenshots/";
 
 	public WebDriver setDriver() throws InterruptedException, MalformedURLException {

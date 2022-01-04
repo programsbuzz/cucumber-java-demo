@@ -1,4 +1,4 @@
-package com.pb.cucumbertest.helper;
+package com.pb.cucumbertest.common;
 
 import java.util.ArrayList;
 import java.util.List;

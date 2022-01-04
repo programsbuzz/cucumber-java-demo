@@ -1,6 +1,6 @@
 package com.pb.cucumbertest.util;
 
-import com.pb.cucumbertest.helper.Constants;
+import com.pb.cucumbertest.common.Constants;
 
 public class ExtentUtil {
 	public static String getReportConfigPath() {

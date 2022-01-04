@@ -4,10 +4,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import com.pb.cucumbertest.helper.Base;
+
+import com.pb.cucumbertest.common.Base;
+
 import io.cucumber.core.api.TypeRegistry;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -66,6 +70,7 @@ public class StepDefinitions extends Base {
 
 		DataTable actual = DataTable.create(actualList);
 		dataTable.diff(actual);
+		Assert.assertTrue(dataTable.equals(actual));
 	}
 
 	@When("I enter following details")

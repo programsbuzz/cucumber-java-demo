@@ -4,21 +4,32 @@ Feature: Registration, Login and MyAccount
  	  Given I am on the home page
     And I follow "Sign in"	  
  	   
-  @smoke
-  Scenario: Verify Login Functionality
+ #	not @regression and not @sanity   
+  @sanity
+  Scenario: Test 1
     When I fill "email address textbox" with "goswami.tarun77@gmail.com"
     Then I fill "password textbox" with "Test1234"  
    
  @regression
-  Scenario: Create New User
+  Scenario: Test 2
     When I fill "registration email textbox" with "goswami.tarun77+1@gmail.com"
     Then I click "create an account button"
     
   @sanity @regression
-  Scenario: Verify Logout Functionality
+  Scenario: Test 3
     When I fill "email address textbox" with "goswami.tarun77@gmail.com"
     Then I fill "password textbox" with "Test1234"
+    And I click on "Logout"      
     
- @regression
-  Scenario: Verify Ignore Test Case
+   @smoke
+  Scenario: Test 4
     When I fill "email address textbox" with "goswami.tarun77@gmail.com"
+    
+  @datatable
+	Scenario: Verify user details
+  #Given When I request "ah.programsbuzz.com/users"
+  Then I gets following response
+    | Username | Email                     |
+    | tgoswami | goswami.tarun77@gmail.com |
+    | mahuja   | manish.ahuja@gmail.com    |
+    | ssharma  | simran.sharma@gmail.com    |  

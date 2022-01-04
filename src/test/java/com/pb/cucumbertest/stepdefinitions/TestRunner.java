@@ -20,7 +20,8 @@ import io.cucumber.junit.Cucumber;
 		glue = {"com.pb.cucumbertest.stepdefinitions"}, 
 		monochrome = true, 
 		dryRun = false, 
-		tags = ("@ContactT")
+//		tags = ("@ParTest")
+		tags = ("@datatable")
 		)
 
 public class TestRunner {
