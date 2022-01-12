@@ -3,6 +3,7 @@ package com.pb.cucumbertest.stepdefinitions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.pb.cucumbertest.common.Base;
@@ -11,7 +12,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class CommonSD extends Base {
+public class CommonSD
+{
+	Base base;
+	WebDriver driver;
+	
+	public CommonSD(Base base)
+	{
+		this.base = base;
+	}
+	
 	@When("I follow {string} link")
 	public void i_follow_link(String linkTxt) {
 //		driver.findElement(By.linkText(linkTxt)).click();

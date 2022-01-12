@@ -112,7 +112,8 @@
 								        </span>
 							        </a>
 							        <div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-						    	        <a class="dropdown-item" href="#"><span class="cf">@datatable</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@tag</span></a>
+						    	        <a class="dropdown-item" href="#"><span class="cf">@testnumber</span></a>
 						    	        <div class="dropdown-divider"></div>
 						    	        <a class="dropdown-item" href="#"><span class="tf" status="clear"><i class="fa fa-dot-circle-o text-warn"></i>Clear</span></a>
 						    	      </div>
@@ -131,21 +132,29 @@
 										<h6 class="mb-3 ml-1">Test Logs</h6>
 											<div class="tsc" status="pass">
 											<div class="st pass test l0" 
-												tags=""
+												tags="@tag"
 												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+												<span class="tt">01.12.2022 19:59:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">[Registration, Login and MyAccount] started</span>
+												<span class="tn">[Title of your feature] started</span>
+												<span class="category-list">
+													<span class="category badge"><i class="fa fa-tag"></i> @tag</span>
+												</span>
+												<span class="author-list">
+												</span>
+												<span class="device-list">
+												</span>
 												
 											</div>
 											<div class="st pass test l1" 
-												tags="@datatable"
+												tags="@tag @testnumber"
 												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+												<span class="tt">01.12.2022 19:59:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">|---[Verify user details] started</span>
+												<span class="tn">|---[Test 1] started</span>
 												<span class="category-list">
-													<span class="category badge"><i class="fa fa-tag"></i> @datatable</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @tag</span>
+													<span class="category badge"><i class="fa fa-tag"></i> @testnumber</span>
 												</span>
 												<span class="author-list">
 												</span>
@@ -156,29 +165,14 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+												<span class="tt">01.12.2022 19:59:12</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)] started</span>
-												
-												<div class="st info">
-													<span class="tt">01.04.2022 15:51:44</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[com.pb.cucumbertest.stepdefinitions.Hooks.bf0(io.cucumber.java.Scenario)]</span>
-													
-													<span class="td">Before Hook</span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I visit the homepage] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+													<span class="tt">01.12.2022 19:59:20</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given I am on the home page]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When I visit the homepage]</span>
 													
 													<span class="td"></span>
 												</div>
@@ -186,31 +180,16 @@
 											<div class="st pass test l2" 
 												tags=""
 												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+												<span class="tt">01.12.2022 19:59:20</span>&nbsp;
 												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I clicked on login link] started</span>
 												
 												<div class="st pass">
-													<span class="tt">01.04.2022 15:51:44</span>&nbsp;
+													<span class="tt">01.12.2022 19:59:21</span>&nbsp;
 													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I follow "Sign in"]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[And I clicked on login link]</span>
 													
 													<span class="td"></span>
-												</div>
-											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">01.04.2022 15:51:44</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I gets following response] started</span>
-												
-												<div class="st pass">
-													<span class="tt">01.04.2022 15:51:44</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then I gets following response]</span>
-													
-													<span class="td"><table class='runtime-table table-striped table'><tr><td>Username</td><td>Email</td></tr><tr><td>tgoswami</td><td>goswami.tarun77@gmail.com</td></tr><tr><td>mahuja</td><td>manish.ahuja@gmail.com</td></tr><tr><td>ssharma</td><td>simran.sharma@gmail.com</td></tr></table></span>
 												</div>
 											</div>
 											</div>

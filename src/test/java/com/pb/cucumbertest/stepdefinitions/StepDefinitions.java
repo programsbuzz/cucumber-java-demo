@@ -64,12 +64,12 @@ public class StepDefinitions extends Base {
 	public void i_gets_following_response(DataTable dataTable) {
 		List<List<String>> actualList = new ArrayList<List<String>>();
 		actualList.add(Arrays.asList("Username", "Email"));
-		actualList.add(Arrays.asList("tgoswami", "goswami.tarun77@gmail.com"));
-		actualList.add(Arrays.asList("mahuja", "manish.ahuja@gmail.com"));
-		actualList.add(Arrays.asList("ssharma", "simran.sharma@gmail.com"));
+		actualList.add(Arrays.asList("U1", "E1"));
+		actualList.add(Arrays.asList("U2", "E2"));
+		actualList.add(Arrays.asList("U4", "E3"));
 
 		DataTable actual = DataTable.create(actualList);
-		dataTable.diff(actual);
+//		dataTable.diff(actual);
 		Assert.assertTrue(dataTable.equals(actual));
 	}
 
@@ -114,6 +114,23 @@ public class StepDefinitions extends Base {
 	public void configureTypeRegistry(TypeRegistry typeRegistry) {
 		// TODO Auto-generated method stub
 
+	}
+	
+	@Then("I get following response")
+	public void i_get_following_response(DataTable dataTable) {
+	  //Data 
+		List<List<String>> actualList = new ArrayList<List<String>>();
+		actualList.add(Arrays.asList("username","email"));
+		actualList.add(Arrays.asList("U1","E1"));
+		actualList.add(Arrays.asList("U2","E2"));
+		actualList.add(Arrays.asList("U3","E3"));
+		
+		DataTable actual = DataTable.create(actualList);
+		
+//		dataTable.diff(actual);
+		Assert.assertTrue(dataTable.equals(actual));
+		
+		
 	}
 
 }

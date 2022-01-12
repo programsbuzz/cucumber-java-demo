@@ -3,6 +3,7 @@ package com.pb.cucumbertest.stepdefinitions;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.BeforeClass;
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.pb.cucumbertest.common.Base;
@@ -27,20 +29,23 @@ import io.qameta.allure.Attachment;
 public class Hooks
 {
 	WebDriver driver;
+	Base base;
 	public ExtentSparkReporter htmlReporter;
 	public ExtentReports extent;
 	Scenario scenario;
 	public ExtentTest logger;
 	MySingleton mys;
-
+	
+	public Hooks(Base base)
+	{
+		this.base = base;
+	}
 
 	
 	@Before()
-	public void bf0(Scenario scenario) throws InterruptedException, IOException {
-//		String browser = System.getProperty("browserType").toUpperCase();
-		
-		scenario.log("Before Hook");
-		 MySingleton.getInstance();
+	public void bf0(Scenario scenario)  
+	{
+		base.setDriver();
 	}
 
 	@Attachment(value = "Page screenshot", type = "image/png")

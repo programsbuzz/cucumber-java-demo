@@ -2,9 +2,19 @@ package com.pb.cucumbertest.stepdefinitions;
 
 import com.pb.cucumbertest.common.Base;
 
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class LoginSD extends Base {
+public class LoginSD {
+	
+	private Base l1;
+	
+	public LoginSD(Base base)
+	{
+		this.l1 = base;
+	}
+
+	
 	@When("I fill in username with {string}")
 	public void i_fill_in_username_with(String string) {
 

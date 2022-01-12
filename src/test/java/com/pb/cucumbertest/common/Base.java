@@ -1,17 +1,20 @@
 package com.pb.cucumbertest.common;
 
-import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Base {
-	public WebDriver driver;
 	public String browser = "chrome";
 	public static String screenshotdir = System.getProperty("user.dir") + "/test-output/screenshots/";
+    private static boolean startBrowser = false;
+    private WebDriver driver;
 
-	public WebDriver setDriver() throws InterruptedException, MalformedURLException {
 
+	public static int num1 = 1, num2 = 2;
+	
+	public WebDriver setDriver()  
+	{
 		System.setProperty("webdriver.chrome.driver", Constants.MAC_CHROME_DRIVER);
 
 		driver = new ChromeDriver();
@@ -19,4 +22,9 @@ public class Base {
 		driver.manage().window().maximize();
 		return driver;
 	}
+	
+	 public WebDriver getDriver() 
+	 {
+	        return driver;
+	 }
 }
