@@ -21,7 +21,7 @@ import io.cucumber.junit.Cucumber;
 		monochrome = true, 
 		dryRun = false, 
 //		tags = ("@ParTest")
-		tags = ("@testnumber")
+		tags = ("@demo")
 		)
 
 public class TestRunner {

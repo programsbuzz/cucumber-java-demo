@@ -5,23 +5,22 @@ import org.openqa.selenium.WebDriver;
 
 import com.pb.cucumbertest.common.Base;
 
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-public class SecondSD {
-	
-private WebDriver driver;
-Base base;
+public class SecondSD 
+{
+	WebDriver driver;
+	Base base;
 	
 	public SecondSD(Base base)
 	{
 		this.base = base;
 	}
-
-	@Then("I clicked on login link")
-	public void readnum1()
-	{
-		base.getDriver().findElement(By.linkText("LOG IN")).click();
 	
+	@When("I click on login link")
+	public void i_click_on_login_link() {
+	    base.getDriver().findElement(By.linkText("LOG IN")).click();
 	}
 
 }
+

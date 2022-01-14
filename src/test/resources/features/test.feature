@@ -20,8 +20,7 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  @testnumber
-  Scenario: Test 1
+  @demo
+  Scenario: Title of your scenario
   When I visit the homepage
- 	And I clicked on login link
-
+  And I click on login link

@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 
 import com.pb.cucumbertest.common.Base;
 
-import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
-public class FirstSD {
-	
-	private WebDriver driver;
+public class FirstSD 
+{
+	WebDriver driver;
 	Base base;
 	
 	public FirstSD(Base base)
@@ -16,10 +16,11 @@ public class FirstSD {
 		this.base = base;
 	}
 	
-	@Then("I visit the homepage")
-	public void increment()
-	{
-		base.getDriver().get("https://www.programsbuzz.com");
+	@When("I visit the homepage")
+	public void i_visit_the_homepage() {
+	    base.getDriver().get("https://www.programsbuzz.com");
 	}
-
+	
 }
+
+
