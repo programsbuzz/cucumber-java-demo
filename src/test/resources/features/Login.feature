@@ -1,8 +1,11 @@
 Feature: Registration, Login and MyAccount
 
   Background: 
-    Given I am on the home page
-    And I follow "Sign in"
+ When I visit the homepage
+
+	@Demo
+  Scenario: Title of your scenario
+  And I click on login link
 
   #	not @regression and not @sanity
   @sanity

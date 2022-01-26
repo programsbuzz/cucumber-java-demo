@@ -10,14 +10,20 @@ import io.cucumber.java.en.When;
 
 public class SearchSD extends Base  {
 	
-private WebDriver driver;
-Base base;
+	private WebDriver driver;
+	Base base;
 	
 	public SearchSD(Base base)
 	{
 		this.base = base;
+		driver = base.getDriver();
 	}
 	
+
+	@When("I click on Search icon")
+	public void i_click_on_search_icon() {
+	    driver.findElement(By.cssSelector("div.gva-search-region span.icon")).click();
+	}
 
 
 //	@When("I fill in search query text with {string}")

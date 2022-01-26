@@ -3,29 +3,25 @@
 
 
 
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8' /> 
+	<meta charset='UTF-8' /> 
 	<meta name='description' content='' />
 	<meta name='robots' content='noodp, noydir' />
 	<meta name='viewport' content='width=device-width, initial-scale=1' />
 	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
 	
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-        <link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/css/extent.css' type='text/css' rel='stylesheet' />
 	
-	<title>ExtentReports</title>
+	<title></title>
 
 	<style type='text/css'>
 		/* json-tree */
 		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+			
 	</style>
 	
 	<script type="text/javascript">
@@ -39,21 +35,21 @@
 		</div>
 <nav>
 	<div class="nav-wrapper">
-		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+        <a href="#!" class="brand-logo black"><img src="http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/commons/img/logo.png"></a>
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
-		<span class='report-name'>ExtentReports</span>
+		<span class='report-name'></span>
 		<!-- report headline -->
 		<span class='report-headline'></span>
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jan 12, 2022 11:10:58 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Jan 26, 2022 04:44:41 AM</span>
 			</a>
 		</ul>
 	</div>
@@ -80,8 +76,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@tag</a></li>
-					<li><a href='#'>@demo</a></li>
+					<li><a href='#'>@SmokeTest</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -113,6 +108,7 @@
 			<!-- search -->
 		</div>
 	</section>
+
 <div id='test-view-charts' class='subview-full'>
     <div id='charts-row' class='row nm-v nm-h'>
         <div class='col s12 m4 l4 np-h'>
@@ -122,10 +118,14 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>2</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped
                 </div>
             </div>
         </div>
@@ -136,12 +136,16 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>2</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
                 </div>
             </div>
         </div>
@@ -152,12 +156,16 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>4</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> others
                 </div>
             </div>
         </div>
@@ -172,14 +180,15 @@
             </div>
         </div>
     </div>
-</div>	<div class='subview-left left'>
+</div>	
+	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Title of your feature</span>
-						<span class='test-time'>Jan 12, 2022 11:11:03 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>My First Feature File</span>
+						<span class='test-time'>Jan 26, 2022 04:44:42 AM</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -188,24 +197,70 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='test-desc'>I want to use this template for my feature file</div>
-<div class='scenario node' test-id='2' status='pass'>
-	<div class='category-list'>
-		<span class='category label'>@tag</span>
-		<span class='category label'>@demo</span>
-	</div>
-	<span class='duration right label'>0h 0m 13s+809ms</span>
+
+<div class='scenario node' test-id='2' status='Pass'>
+
+	<span class='duration right label'>00 00 13.321</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Title of your scenario</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Click on login link</div>
 	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@SmokeTest</span>
+		</div>
+	
 	<ul class='steps'>
-		<li test-id='4' class='node when pass' status='pass'>
-			<div class="step-name" title="com.pb.cucumbertest.stepdefinitions.FirstSD.i_visit_the_homepage()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When I visit the homepage</div>
-			<div class="node-step"></div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.pb.cucumbertest.stepdefinitions.FirstSD.i_am_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on the homepage</div>
+
+
 		</li>
-		<li test-id='5' class='node and pass' status='pass'>
-			<div class="step-name" title="com.pb.cucumbertest.stepdefinitions.SecondSD.i_click_on_login_link()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And I click on login link</div>
-			<div class="node-step"></div>
+		<li test-id='5' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.pb.cucumbertest.stepdefinitions.FirstSD.i_click_on_login_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on login link</div>
+
+
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>My Second Feature File</span>
+						<span class='test-time'>Jan 26, 2022 04:44:55 AM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+	<a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+	<a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+
+<div class='scenario node' test-id='8' status='Pass'>
+
+	<span class='duration right label'>00 00 10.767</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Click on Ask Doubt link</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@SmokeTest</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='10' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(com.pb.cucumbertest.stepdefinitions.FirstSD.i_am_on_the_homepage())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given I am on the homepage</div>
+
+
+		</li>
+		<li test-id='11' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(com.pb.cucumbertest.stepdefinitions.SecondSD.i_click_on_ask_doubt_link())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And I click on ask doubt link</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -214,6 +269,8 @@
 			</ul>
 		</div>
 	</div>
+	
+	
 	<!-- subview left -->
 	<div class='subview-right left'>
 		<div class='view-summary'>
@@ -251,14 +308,14 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@tag</span>
+						<span class='category-name'>@SmokeTest</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label pass'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
 							
 							
 						</div>
@@ -273,47 +330,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jan 12, 2022 11:11:03 PM</td>
-										<td class='linked' test-id='1'>Title of your feature</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 26, 2022 04:44:42 AM</td>
+										<td class='linked' test-id='2'>Click on login link</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 									<tr>
-										<td>Jan 12, 2022 11:11:03 PM</td>
-										<td class='linked' test-id='2'>Title of your scenario</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@demo</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jan 12, 2022 11:11:03 PM</td>
-										<td class='linked' test-id='2'>Title of your scenario</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Jan 26, 2022 04:44:55 AM</td>
+										<td class='linked' test-id='8'>Click on Ask Doubt link</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -329,7 +353,7 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -337,37 +361,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Scenarios
-					<div class='panel-lead'>1</div>
-				</div>
-			</div>
-			<div class='col s2'>
-				<div class='card-panel r'>
-					Steps
 					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>2</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jan 12, 2022 11:10:58 PM</div>
+					<div class='panel-lead'>Jan 26, 2022 04:44:41 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jan 12, 2022 11:11:16 PM</div>
+			 		<div class='panel-lead'>Jan 26, 2022 04:45:06 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 18s+787ms</div>
+					<div class='panel-lead'>00 00 25.037</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -383,17 +407,8 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@tag</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									50%
-							</td>
-						</tr>
-						<tr>
-							<td>@demo</td>
-							<td>1</td>
+							<td>@SmokeTest</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -407,48 +422,48 @@
 	</div>
 </div>
 <!-- dashboard view -->
-<!-- testrunner-logs view -->		</div>
+		</div>
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
+                parentCount: 2,
+				passParent: 2,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 2,
+				passChild: 2,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 2,
-				passGrandChild: 2,
+				grandChildCount: 4,
+				passGrandChild: 4,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
 			};
-		</script>
+			</script>
+		
 		<script>
 			var timeline = {
-			        "Title of your feature":13.809
+			        "My First Feature File":13.327,"My Second Feature File":10.767
 			};
 		</script>
-	
-		  <script src='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		  <script src='http://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ff53917fbbdb5ef820abbbe4d199a6942dc771ff/v3html/js/extent.js' type='text/javascript'></script>
+		
+		
 		<script type='text/javascript'>
-		</script>
+				
+		</script> 
+
 	</body>
 </html>
