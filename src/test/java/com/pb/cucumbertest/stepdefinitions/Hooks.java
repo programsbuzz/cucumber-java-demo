@@ -10,7 +10,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.pb.cucumbertest.common.Base;
 
@@ -21,8 +21,8 @@ import io.cucumber.java.Scenario;
 public class Hooks
 {
 
-	Base base;
-	
+	Base base;	
+
 	
 	public Hooks(Base base)
 	{
@@ -33,13 +33,22 @@ public class Hooks
 	public void bf(Scenario scenario)
 	{
 		base.setDriver();
+		base.setScenario(scenario);
 	}
 	
 	@After
 	public void af(Scenario scenario) throws IOException
 	{
-	
-	    base.getDriver().quit();	
+	   if(scenario.isFailed())
+	   {
+		   scenario.log("scenario failed");
+	   }
+		scenario.log("closing the browser.");
+		ExtentCucumberAdapter.addTestStepLog("this is my log");
+
+	    base.getDriver().quit();
+	    scenario.log("Browser closed");
+	    ExtentCucumberAdapter.getCurrentScenario().pass("Hello");
 	}
 	
 }
