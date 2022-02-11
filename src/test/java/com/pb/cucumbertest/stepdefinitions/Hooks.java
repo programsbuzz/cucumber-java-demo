@@ -20,9 +20,7 @@ import io.cucumber.java.Scenario;
 
 public class Hooks
 {
-
 	Base base;	
-
 	
 	public Hooks(Base base)
 	{
@@ -44,11 +42,10 @@ public class Hooks
 		   scenario.log("scenario failed");
 	   }
 		scenario.log("closing the browser.");
-		ExtentCucumberAdapter.addTestStepLog("this is my log");
+//		ExtentCucumberAdapter.addTestStepLog("this is my log");
 
 	    base.getDriver().quit();
 	    scenario.log("Browser closed");
-	    ExtentCucumberAdapter.getCurrentScenario().pass("Hello");
 	}
 	
 }
