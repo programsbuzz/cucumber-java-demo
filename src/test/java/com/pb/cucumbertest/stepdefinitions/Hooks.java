@@ -1,5 +1,6 @@
 package com.pb.cucumbertest.stepdefinitions;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -17,6 +18,7 @@ import com.pb.cucumbertest.common.Base;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
 
 public class Hooks
 {
@@ -35,12 +37,15 @@ public class Hooks
 	}
 	
 	@After
-	public void af(Scenario scenario) throws IOException
+	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
-	   if(scenario.isFailed())
-	   {
-		   scenario.log("scenario failed");
-	   }
+		if(scenario.isFailed())
+	    {	
+			Thread.sleep(5000);
+	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
+	    }
+		
+	  
 		scenario.log("closing the browser.");
 //		ExtentCucumberAdapter.addTestStepLog("this is my log");
 
