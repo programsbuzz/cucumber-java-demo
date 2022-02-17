@@ -22,7 +22,7 @@ public class SecondPOM
 	public void clickAskDoubt()
 	{
 		askDoubtLnk.click();
-		temp.click();
+//		temp.click();
 		
 	}
 }

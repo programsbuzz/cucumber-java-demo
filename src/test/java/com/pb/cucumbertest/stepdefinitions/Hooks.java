@@ -1,24 +1,14 @@
 package com.pb.cucumbertest.stepdefinitions;
 
-import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Base64;
-import java.util.Date;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.pb.cucumbertest.common.Base;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.qameta.allure.Allure;
 
 public class Hooks
 {
@@ -29,13 +19,15 @@ public class Hooks
 		this.base = base;
 	}
 	
+	
 	@Before
-	public void bf(Scenario scenario)
+	public void bf(Scenario scenario) throws IOException
 	{
 		base.setDriver();
 		base.setScenario(scenario);
 	}
 	
+		
 	public byte[] getByteScreenshot() throws IOException 
 	{
 	    File src = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.FILE);
@@ -47,22 +39,14 @@ public class Hooks
 	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
 		if(scenario.isFailed())
-	    {	
-			Thread.sleep(5000);
-			
+	    {			
 			// Enable this step for Extent
 			scenario.attach(getByteScreenshot(), "image/png", scenario.getName());
-			
+		
 			// Enable below steps for Allure
 //	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
 	    }
-		
-	  
-		scenario.log("closing the browser.");
-//		ExtentCucumberAdapter.addTestStepLog("this is my log");
-
 	    base.getDriver().quit();
-	    scenario.log("Browser closed");
 	}
 	
 }
