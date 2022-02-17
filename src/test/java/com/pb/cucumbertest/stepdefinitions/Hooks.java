@@ -36,13 +36,25 @@ public class Hooks
 		base.setScenario(scenario);
 	}
 	
+	public byte[] getByteScreenshot() throws IOException 
+	{
+	    File src = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.FILE);
+	    byte[] fileContent = FileUtils.readFileToByteArray(src);
+	    return fileContent;
+	}
+	
 	@After
 	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
 		if(scenario.isFailed())
 	    {	
 			Thread.sleep(5000);
-	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
+			
+			// Enable this step for Extent
+			scenario.attach(getByteScreenshot(), "image/png", scenario.getName());
+			
+			// Enable below steps for Allure
+//	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
 	    }
 		
 	  

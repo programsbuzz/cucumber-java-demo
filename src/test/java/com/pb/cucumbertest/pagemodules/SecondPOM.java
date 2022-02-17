@@ -16,8 +16,13 @@ public class SecondPOM
 	@FindBy(css="a[href='/ask-doubt']")
 	public WebElement askDoubtLnk;
 	
+	@FindBy(css="a[href='/ask-doubt123']")
+	public WebElement temp;
+	
 	public void clickAskDoubt()
 	{
 		askDoubtLnk.click();
+		temp.click();
+		
 	}
 }

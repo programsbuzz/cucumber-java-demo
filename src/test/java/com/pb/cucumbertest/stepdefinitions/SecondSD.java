@@ -22,5 +22,6 @@ public class SecondSD {
 	public void i_click_on_ask_doubt_link() {
 	  secondPOM.clickAskDoubt();
 	  scenario.log("scenario fdfdfdfd ");
+	
 	}
 }

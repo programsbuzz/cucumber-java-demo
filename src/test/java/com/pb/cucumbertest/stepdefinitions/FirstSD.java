@@ -31,7 +31,7 @@ public class FirstSD {
 
 	@Given("I click on login link")
 	public void i_click_on_login_link() {
-		ExtentCucumberAdapter.addTestStepLog("****clicked on login***");
+//		ExtentCucumberAdapter.addTestStepLog("****clicked on login***");
 		scenario.log("scenario abababababa ");
 
 	  firstPOM.clickLoginLnk();
