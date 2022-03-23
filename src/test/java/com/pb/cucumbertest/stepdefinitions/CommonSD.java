@@ -66,7 +66,8 @@ public class CommonSD
 	   
 	}
 	@When("I fill {string} with {string}")
-	public void i_fill_with(String string, String string2) {
+	public void i_fill_with(String string, String string2) throws InterruptedException {
+		Thread.sleep(5000);
 
 	}
 	

@@ -65,8 +65,8 @@ public class Hooks
 	{
 		if(scenario.isFailed())
 	    {			
-			// Enable this step for Extent
-//			scenario.attach(screenShotByte(), "image/png", scenario.getName());
+//			 Enable this step for Extent
+			scenario.attach(screenShotByte(), "image/png", scenario.getName());
 
 		
 //			ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(getScreenshotPath(screenShotByte()));

@@ -1,7 +1,7 @@
 Feature: Registration, Login and MyAccount
 
   Background: 
- When I visit the homepage
+     Given I am on the homepage
 
 	@Demo
   Scenario: Title of your scenario
@@ -24,7 +24,7 @@ Feature: Registration, Login and MyAccount
     Then I fill "password textbox" with "Test1234"
     And I click on "Logout"
 
-  @smoke
+  @SmokeTest
   Scenario: Test 4
     When I fill "email address textbox" with "goswami.tarun77@gmail.com"
 

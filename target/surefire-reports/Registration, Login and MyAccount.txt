@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Registration, Login and MyAccount
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 11.412 s <<< FAILURE! - in Registration, Login and MyAccount
-Registration, Login and MyAccount.Verify Login Functionality  Time elapsed: 5.072 s  <<< ERROR!
-java.lang.NullPointerException
-
-Registration, Login and MyAccount.Create New User  Time elapsed: 2.234 s  <<< ERROR!
-java.lang.NullPointerException
-
-Registration, Login and MyAccount.Verify Logout Functionality  Time elapsed: 1.996 s  <<< ERROR!
-java.lang.NullPointerException
-
-Registration, Login and MyAccount.Verify Ignore Test Case  Time elapsed: 2.106 s  <<< ERROR!
-java.lang.NullPointerException
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 19.738 s - in Registration, Login and MyAccount
