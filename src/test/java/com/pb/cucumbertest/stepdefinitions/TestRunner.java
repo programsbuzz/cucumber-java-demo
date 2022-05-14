@@ -6,7 +6,6 @@ import org.junit.runner.RunWith;
 
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
-import io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm;
 
 @RunWith(Cucumber.class)
 
@@ -15,15 +14,15 @@ import io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm;
 		plugin = { "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" }, 
 		
 		//Enable below plugin for different default report
-//		plugin = {"pretty", "html:target/cucumber-html-report" , "json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml" , "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+//		plugin = {"pretty", "html:target/cucumber-html-report" , "json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml"},
 
 //		Enable below plugin for Allure Adapter
 //		plugin = {"pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
-		features = {"src/test/resources/features" }, 
-		glue = {"com.pb.cucumbertest.stepdefinitions"}, 
-		monochrome = true, 
+		features = {"classpath:features"},
+		glue = {"com.pb.cucumbertest"},
+		monochrome = true,
 		dryRun = false, 
-		tags = ("@SmokeTest")
+		tags = ("@Smoke")
 		)
 
 public class TestRunner {

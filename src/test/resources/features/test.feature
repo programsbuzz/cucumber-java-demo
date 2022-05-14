@@ -16,11 +16,16 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+@MyTag
 Feature: Title of your feature
-  I want to use this template for my feature file
 
-  @Demo
-  Scenario: Title of your scenario
-  When I visit the homepage
-  And I click on login link
+  Scenario: Title of test scenario
+	Then I should see "Hello "World"" text
+	Then I should see "Hello 'World'" text
+	
+  
+  
+  
+	
+  
+	

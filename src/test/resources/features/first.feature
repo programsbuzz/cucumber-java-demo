@@ -1,11 +1,21 @@
-Feature: My First Feature File
+@Feature1
+Feature: Feature 1
 
-  @SmokeTest
-  Scenario: Click on login link
+  Background: 
     Given I am on the homepage
-    And I click on login link
-    
-  @SmokeTest
-  Scenario: Login 2
-    Given I am on the homepage
-    And fddf dfdfdf dfdfd fdfd 
+
+  @Smoke
+  Scenario: Scenario 1
+    Then I click on Ask Doubt link
+
+  #@Regression
+  #Scenario: Scenario 2
+    #Then I should see "Forgot Password" link
+#
+  #@Smoke
+  #Scenario: Scenario 3
+    #Then I should see "Ask Doubt" Heading
+#
+  #Scenario: Scenario 4
+    #Then I should see "Click Here" link
+		

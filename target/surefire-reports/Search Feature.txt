@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: Search Feature
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 5.069 s <<< FAILURE! - in Search Feature
-Search Feature.I want to search the website  Time elapsed: 5.069 s  <<< ERROR!
-java.lang.NullPointerException
-

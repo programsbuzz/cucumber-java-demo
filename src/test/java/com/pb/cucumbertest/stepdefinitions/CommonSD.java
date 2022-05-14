@@ -16,16 +16,100 @@ public class CommonSD
 {
 	Base base;
 	WebDriver driver;
-	
+
+ 
 	public CommonSD(Base base)
 	{
 		this.base = base;
+		this.driver = base.getDriver();
 	}
 	
-	@When("I follow {string} link")
-	public void i_follow_link(String linkTxt) {
-//		driver.findElement(By.linkText(linkTxt)).click();
+
+@Given("I am on the homepage")
+public void i_am_on_the_home_page() {
+    driver.get("https://www.programsbuzz.com");
+}
+
+	
+	
+	@Given("I follow url {string}")
+	public void i_follow_url(String url) {
+		driver.get(url);
+	    
 	}
+	
+	@Then("^I should see \"([a-zA-Z \"']*)\" text")
+	public void i_should_see_hello_world_text(String s) {
+		System.out.println(s);
+	  
+	}
+	
+//	@Then("^I should see \"([\\w\\s\"]*)\" text$")
+//	public void teststep3(String s)
+//	{
+//		System.out.println("value 3 is:"+s);
+//	}
+	
+//	@Then("^I should see \"([\\w\\s']*)\" text$")
+//	public void teststep4(String s)
+//	{
+//		System.out.println("value 4 is:"+s);
+//	}
+	
+	
+	
+	
+
+	
+	@Then("I should see {int} item\\(s)")
+	public void i_should_see_item_s(Integer int1) {
+	    
+	}
+
+	@Then("I should see {int} \\{what}")
+	public void i_should_see(Integer int1) {
+	    
+	}
+	
+	
+
+	@Then("progress is {int}%")
+	public void progress_is(Integer int1) {
+		System.out.println(int1);
+	}
+
+	@Then("^total of cart is .([0-9.]*)")
+	public void testing(Double double1)
+	{
+		System.out.println(double1);
+	}
+	
+	@Then("the {string} label is displayed")
+	public void the_label_is_displayed(String string) {
+		System.out.println(string);
+	}
+
+
+	
+	@When("I fill in your message with")
+	public void i_fill_in_yourr_message_with(String docString) {
+		driver.findElement(By.cssSelector("#Message")).sendKeys(docString);
+	}	
+	
+
+	@Then("I have {int} item(s)/product(s) in cart")
+	public void stepname(int i)
+	{
+		
+	}
+	
+	@Then("count of item is {int}")	
+	public void teststep(int n) {
+		System.out.print(n);
+	}
+		
+	
+	
 	
 	@When("this step will fail")
 	public void this_step_will_fail() {
@@ -63,6 +147,7 @@ public class CommonSD
 	
 	@Given("I follow {string}")
 	public void i_follow(String string) {
+		driver.findElement(By.linkText(string)).click();
 	   
 	}
 	@When("I fill {string} with {string}")

@@ -1,15 +1,24 @@
-@ParTest
-@Search
-Feature: Search Feature 
+@ParTest @Search
+Feature: Search Feature
 
-Background:
- When I visit the homepage
+  Background: 
+    Given I am on the home page
 
-Scenario: I want to search the website 
-	Given I am on the home page 
-	When I fill in search query one text with "T-Shirt" 
-	And this step will fail
+  @Group1
+  Scenario: I want to search the website
+    When I fill in search query one text with "T-Shirt"
+    And this step will fail
 
-	@Demo
+  @Group1
   Scenario: Verify the search functionality
- 	And I click on Search icon
+    And I click on Search icon
+
+  @Group1
+  Scenario Outline: Search Keywords
+    When I fill in "input[id='search']" with "<search keyword>"
+    And I click on submit button
+
+    Examples: 
+      | search keyword |
+      | a3433          |
+      | hello##$       |

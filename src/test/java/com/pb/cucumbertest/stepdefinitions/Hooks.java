@@ -15,7 +15,6 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.qameta.allure.Allure;
 
 public class Hooks
 {
@@ -57,23 +56,31 @@ public class Hooks
 	@AfterStep
 	public void as(Scenario scenario) {
 		// Enable below steps for Allure
-        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
+//        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
     
 	}
 	@After
 	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
-		if(scenario.isFailed())
-	    {			
+		  if (scenario.isFailed()) {
+		        String screenshotName = scenario.getName().replaceAll(" ", "_");
+		        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
+		        scenario.attach(source, "image/png", screenshotName);
+		     }
+		  
+//		if(scenario.isFailed())
+//	    {		
+//	        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
+
 //			 Enable this step for Extent
-			scenario.attach(screenShotByte(), "image/png", scenario.getName());
+//			scenario.attach(screenShotByte(), "image/png", scenario.getName());
 
 		
 //			ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(getScreenshotPath(screenShotByte()));
 //			scenario.log("test");
 			// Enable below steps for Allure
 //	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
-	    }
+//	    }
 	    base.getDriver().quit();
 	}
 	

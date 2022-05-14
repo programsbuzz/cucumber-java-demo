@@ -13,7 +13,7 @@ public class FirstPOM
 		PageFactory.initElements(base.getDriver(), this);
 	}
 	
-	@FindBy(css="a[href='/user/login12343243']")
+	@FindBy(css="a[href='/user/login']")
 	public WebElement loginLnk;
 	
 	public void clickLoginLnk()
