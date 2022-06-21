@@ -37,6 +37,7 @@ public class Hooks
 		base.setScenario(scenario);
 		 Capabilities cap = ((RemoteWebDriver) base.getDriver()).getCapabilities();
 		 String browserName = cap.getBrowserName().toLowerCase();
+		 ExtentCucumberAdapter.getCurrentScenario().assignCategory(browserName);
 		scenario.log("browser name: "+browserName);
 
 	}
@@ -70,11 +71,11 @@ public class Hooks
 	@After
 	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
-		  if (scenario.isFailed()) {
-		        String screenshotName = scenario.getName().replaceAll(" ", "_");
-		        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
-		        scenario.attach(source, "image/png", screenshotName);
-		     }
+//		  if (scenario.isFailed()) {
+//		        String screenshotName = scenario.getName().replaceAll(" ", "_");
+//		        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
+//		        scenario.attach(source, "image/png", screenshotName);
+//		     }
 		  
 //		if(scenario.isFailed())
 //	    {		
