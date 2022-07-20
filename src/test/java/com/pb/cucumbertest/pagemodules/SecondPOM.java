@@ -21,8 +21,8 @@ public class SecondPOM
 	
 	public void clickAskDoubt()
 	{
-		askDoubtLnk.click();
-//		temp.click();
+//		askDoubtLnk.click();
+		temp.click();
 		
 	}
 }

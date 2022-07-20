@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@MyTag
+@Smoke
 Feature: Title of your feature
 
   Scenario: Title of test scenario

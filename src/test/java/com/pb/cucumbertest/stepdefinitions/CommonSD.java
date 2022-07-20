@@ -6,6 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.pb.cucumbertest.common.Base;
 
 import io.cucumber.java.en.Given;
@@ -40,8 +41,7 @@ public void i_am_on_the_home_page() {
 	
 	@Then("^I should see \"([a-zA-Z \"']*)\" text")
 	public void i_should_see_hello_world_text(String s) {
-		System.out.println(s);
-	  
+		ExtentCucumberAdapter.getCurrentScenario().fail("Test Failed");	  
 	}
 	
 //	@Then("^I should see \"([\\w\\s\"]*)\" text$")

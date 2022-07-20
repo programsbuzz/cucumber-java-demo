@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter;
 import com.pb.cucumbertest.common.Base;
+
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
@@ -71,25 +72,28 @@ public class Hooks
 	@After
 	public void af(Scenario scenario) throws IOException, InterruptedException
 	{
-//		  if (scenario.isFailed()) {
+
+//				ExtentCucumberAdapter.getCurrentScenario().fail("Test Failed");
+				
+		//		  if (scenario.isFailed()) {
 //		        String screenshotName = scenario.getName().replaceAll(" ", "_");
 //		        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
 //		        scenario.attach(source, "image/png", screenshotName);
 //		     }
 		  
-//		if(scenario.isFailed())
-//	    {		
-//	        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
+		if(scenario.isFailed())
+	    {		
+	        byte[] source = ((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES);
 
 //			 Enable this step for Extent
-//			scenario.attach(screenShotByte(), "image/png", scenario.getName());
+			scenario.attach(screenShotByte(), "image/png", scenario.getName());
 
 		
 //			ExtentCucumberAdapter.addTestStepScreenCaptureFromPath(getScreenshotPath(screenShotByte()));
 //			scenario.log("test");
 			// Enable below steps for Allure
 //	        Allure.addAttachment(scenario.getName(), new ByteArrayInputStream(((TakesScreenshot) base.getDriver()).getScreenshotAs(OutputType.BYTES)));
-//	    }
+	    }
 	    base.getDriver().quit();
 	}
 	
